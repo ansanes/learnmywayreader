@@ -1,4 +1,4 @@
-### learn My Way Reader
+### Learn My Way Reader
 
 This is the repository for the Unicef Learn My Way Reader application. Learn My Way Reader is a part of the project Accessible Textbooks for All (https://www.accessibletextbooksforall.org/)
 
