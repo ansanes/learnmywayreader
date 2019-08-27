@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_3"
+    tools:context=".WellDoneOptionsActivity"
+    >
+
+    <ImageView
+        android:id="@+id/petHelperImageView"
+        android:layout_width="413dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pet_lion_transbk" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="672dp"
+        android:layout_height="454dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@mipmap/speech_bubble1"
+        android:text="Well done!\n\nWe saved the way you\nlike to learn! You can\nchange it anytime from\nthe menu."
+        android:paddingStart="120dp"
+        android:paddingTop="38dp"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/nav_buttons_1" />
+
+    <ImageView
+        android:id="@+id/minipethelperimageView"
+        android:layout_width="128dp"
+        android:layout_height="120dp"
+        app:srcCompat="@mipmap/pet_lion_transbk"
+        app:layout_constraintBottom_toBottomOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="@id/textView2"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="20dp"
+        tools:layout_editor_absoluteX="684dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+</android.support.constraint.ConstraintLayout>

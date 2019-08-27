@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil xmlns:epub="http://www.idpf.org/2007/ops"
+    version="3.0"
+    xmlns="http://www.w3.org/ns/SMIL">
+    <body>
+        <seq id="seq_1"
+            epub:textref="page.xhtml">
+            <par id="par_-1">
+                <text src="page.xhtml#SCFirstFakeReadAloud" />
+                <video
+                    clipBegin="00:00:00.000"
+                    clipEnd="00:00:00.307"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_0">
+                <text src="page.xhtml#obj4976" />
+                <video
+                    clipBegin="00:00:00.307"
+                    clipEnd="00:00:10.961"
+                    src="video/page6_sign.mp3" />
+            </par>
+            <par id="par_1">
+                <text src="page.xhtml#obj4981" />
+                <video
+                    clipBegin="00:00:10.961"
+                    clipEnd="00:00:21.660"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_2">
+                <text src="page.xhtml#obj4985" />
+                <video
+                    clipBegin="00:00:21.660"
+                    clipEnd="00:00:27.386"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_3">
+                <text src="page.xhtml#obj4989" />
+                <video
+                    clipBegin="00:00:27.386"
+                    clipEnd="00:00:31.425"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_4">
+                <text src="page.xhtml#obj4993" />
+                <video
+                    clipBegin="00:00:31.425"
+                    clipEnd="00:00:43.260"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_5">
+                <text src="page.xhtml#obj4997" />
+                <video
+                    clipBegin="00:00:43.260"
+                    clipEnd="00:00:48.019"
+                    src="video/page6_sign.mp4" />
+            </par>
+            <par id="par_6">
+                <text src="page.xhtml#obj5001" />
+                <video
+                    clipBegin="00:00:48.019"
+                    clipEnd="00:00:50.956"
+                    src="video/page6_sign.mp4" />
+            </par>
+        </seq>
+    </body>
+</smil>

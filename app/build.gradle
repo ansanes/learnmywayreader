@@ -1,0 +1,40 @@
+def ndk_skipX86 = (rootProject.hasProperty("readium_ndk_skipX86") && rootProject.readium_ndk_skipX86)
+def ndk_skipARM = (rootProject.hasProperty("readium_ndk_skipARM") && rootProject.readium_ndk_skipARM)
+def ndk_clang = (rootProject.hasProperty("readium_ndk_clang") && rootProject.readium_ndk_clang)
+def ndk_experimental = (rootProject.hasProperty("readium_ndk_experimental") && rootProject.readium_ndk_experimental)
+
+if (ndk_experimental) {
+    println "${project.name}: Using Gradle EXPERIMENTAL to build application"
+
+    apply from: 'build_experimental.gradle'
+} else {
+    println "${project.name}: Using Gradle STABLE to build application"
+
+    apply from: 'build_stable.gradle'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    flatDir {
+        dirs '../libs'
+    }
+}
+
+dependencies {
+    compile 'com.nononsenseapps:filepicker:3.0.0'
+    compile 'com.android.support:support-v4:23.+'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // compile 'com.koushikdutta.async:androidasync:2.+' ALREADY INCLUDED AS DEPENDENCY OF com.koushikdutta.ion
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.nanohttpd:nanohttpd:2.3.1'
+}
+
+tasks.whenTaskAdded { task ->
+    def taskName = task.name
+
+    if (taskName.startsWith("compile")) {
+    }
+}

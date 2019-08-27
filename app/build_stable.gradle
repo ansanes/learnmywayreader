@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion = 26
+    buildToolsVersion = "27.0.3"
+    flavorDimensions "default"
+    lintOptions {
+        checkReleaseBuilds = false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError = false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        // manifest@package attribute in src/main/AndroidManifest.xml
+        applicationId = "org.readium.sdk.android.launcher"
+
+        // manifest/uses-sdk@android:minSdkVersion attribute in src/main/AndroidManifest.xml
+        minSdkVersion 24
+
+        // manifest/uses-sdk@android:targetSdkVersion attribute in src/main/AndroidManifest.xml
+        targetSdkVersion 26
+
+        // manifest@android:versionCode attribute in src/main/AndroidManifest.xml
+        versionCode 31
+
+        // manifest@android:versionName attribute in src/main/AndroidManifest.xml
+        versionName "1.31"
+    } //defaultConfig
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = [
+                        './src/main/java',
+                ]
+            } //java
+
+        } //main
+    } //sourceSets
+
+    buildTypes {
+        debug {
+            minifyEnabled = false
+        }
+        release {
+            minifyEnabled = false
+        }
+    } //buildTypes
+
+    productFlavors {
+        if (!ndk_skipARM)
+            "arm" {
+                ndk.with {
+                    abiFilters = ["armeabi-v7a"]
+                }
+            }
+
+        if (!ndk_skipX86)
+            "x86" {
+                ndk.with {
+                    abiFilters = ["x86"]
+                }
+            }
+    } //productFlavors
+} //android

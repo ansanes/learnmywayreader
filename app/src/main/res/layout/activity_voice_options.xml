@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceOptionsActivity"
+    android:background="@mipmap/background_1">
+
+    <ImageView
+        android:id="@+id/petHelperImageView"
+        android:layout_width="347dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pet_bird_transbk" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="732dp"
+        android:layout_height="251dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/speechbubble2"
+        android:text="Do you want a voice\nto read out loud to you?"
+        android:textSize="48dp"
+        android:textColor="#000000"
+        android:paddingTop="50dp"
+        android:paddingStart="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/option_buttons" />
+    <include layout="@layout/nav_buttons_2" />
+
+</android.support.constraint.ConstraintLayout>

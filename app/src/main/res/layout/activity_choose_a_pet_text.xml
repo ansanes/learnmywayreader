@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_lime"
+    tools:context=".WelcomeActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="168dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/man_greeting" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="672dp"
+        android:layout_height="411dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@mipmap/speech_bubble1"
+        android:paddingTop="50dp"
+        android:paddingStart="120dp"
+        android:text="Choose a pet helper to\nguide you on your\nlearning adventure!"
+        android:textColor="#000000"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/nav_buttons_1" />
+
+</android.support.constraint.ConstraintLayout>

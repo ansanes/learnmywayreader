@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webviewContainerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <org.readium.sdk.android.launcher.MutedVideoView
+        android:id="@+id/signLanguageVideoView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        />
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="Epub webview"
+       />
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/optionsImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:contentDescription="button options dialog"
+                app:srcCompat="@mipmap/pet_lion_transbk" />
+            <View
+                android:id="@+id/sepview4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                />
+            <View
+                android:id="@+id/sepview1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.8"
+                />
+
+            <ImageButton
+                android:id="@+id/left"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:contentDescription="button previous page"
+                android:onClick="onClick"
+                android:src="@mipmap/backarrow_black" />
+
+            <TextView
+                android:id="@+id/page_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="5dp"
+                android:gravity="center"
+                android:text="Chapter one: porta oberta:\npage 1 of 10"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/right"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:contentDescription="button next page"
+                android:onClick="onClick"
+                android:src="@mipmap/forwardarrow_black" />
+            <ImageButton
+                android:id="@+id/previosMediaOverlay"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:contentDescription="button previous sentence"
+                android:onClick="onClick"
+                android:src="@mipmap/prev_mo_button" />
+
+            <ImageButton
+                android:id="@+id/nextMediaOverlay"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:contentDescription="button next sentence"
+                android:onClick="onClick"
+                android:src="@mipmap/next_mo_button" />
+
+
+            <ImageButton
+                android:id="@+id/bottomvoiceoverImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="button toggle voice over"
+                app:srcCompat="@mipmap/bottom_voice_over_on" />
+
+            <ImageButton
+                android:id="@+id/bottonsignlanguageImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="button toggle sign language video"
+                app:srcCompat="@mipmap/bottom_sign_language_on" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/floatingSignLanguageImageButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="button sign language video toggle"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/bottom_sign_language_on" />
+</RelativeLayout>

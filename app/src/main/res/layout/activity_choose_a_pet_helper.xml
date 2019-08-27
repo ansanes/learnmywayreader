@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_lime"
+    tools:context=".ChooseAPetHelperActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+
+        android:layout_marginTop="32dp"
+        android:text="Choose your pet helper"
+        android:textSize="42sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/buttonslinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/dog_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:contentDescription="button dog helper"
+                android:elevation="10dp"
+                android:onClick="dogClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_dog" />
+            <ImageButton
+                android:id="@+id/cat_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="catClicked"
+                android:scaleType="fitXY"
+                android:contentDescription="button cat helper"
+                app:srcCompat="@mipmap/pet_cat" />
+            <ImageButton
+                android:id="@+id/cactus_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="cactusClicked"
+                android:scaleType="fitXY"
+                android:contentDescription="button cactus helper"
+                app:srcCompat="@mipmap/pet_cactus" />
+            <ImageButton
+                android:id="@+id/fish_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="fishClicked"
+                android:contentDescription="button fish helper"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_fish" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/owl_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="owlClicked"
+                android:contentDescription="button owl helper"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_owl" />
+            <ImageButton
+                android:id="@+id/bird_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="birdClicked"
+                android:contentDescription="button bird helper"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_bird"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="132dp" />
+            <ImageButton
+                android:id="@+id/lion_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="lionClicked"
+                android:contentDescription="button lion helper"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_lion" />
+            <ImageButton
+                android:id="@+id/monkey_helper_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="monkeyClicked"
+                android:contentDescription="button monkey helper"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/pet_monkey" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/nav_buttons_1" />
+</android.support.constraint.ConstraintLayout>

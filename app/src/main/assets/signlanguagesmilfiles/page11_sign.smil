@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">
+
+    <body>
+        <par id="par1">
+            <text src="../page.xhtml#page_w1" />
+            <video src="s13_19.mp4" clipBegin="0.00" clipEnd="6.17" />
+        </par>
+
+        <par id="par2">
+            <text src="../page.xhtml#page_w2" />
+            <video src="s02_14.mp4" clipBegin="0.00" clipEnd="4.00" />
+        </par>
+
+    </body>
+</smil>

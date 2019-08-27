@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">
+
+    <body>
+        <par id="par1">
+            <text src="../page.xhtml#page_w1" />
+            <video src="s02_13.mp4" clipBegin="0.00" clipEnd="3.50" />
+        </par>
+        <par id="par2">
+            <text src="../page.xhtml#page_w2" />
+            <video src="s13_17c_1.mp4" clipBegin="0.0" clipEnd="9.80" />
+        </par>
+        <par id="par3">
+            <text src="../page.xhtml#page_w3" />
+            <video src="s13_17c_2.mp4" clipBegin="0.00" clipEnd="12.84" />
+        </par>
+        <par id="par4">
+            <text src="../page.xhtml#page_w4" />
+            <video src="s13_17c_3.mp4" clipBegin="0.00" clipEnd="4.33" />
+        </par>
+        <par id="par5">
+            <text src="../page.xhtml#page_w5" />
+            <video src="s13_17c_4.mp4" clipBegin="0.00" clipEnd="11.30" />
+        </par>
+        <par id="par6">
+            <text src="../page.xhtml#page_w6" />
+            <video src="s13_17c_5.mp4" clipBegin="0.00" clipEnd="7.67" />
+        </par>
+        <par id="par7">
+            <text src="../page.xhtml#page_w7" />
+            <video src="s13_17c_6.mp4" clipBegin="0.00" clipEnd="4.58" />
+        </par>
+    </body>
+</smil>

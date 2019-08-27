@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonslinearLayout"
+    android:layout_width="0dp"
+    android:layout_height="260dp"
+    android:layout_marginBottom="125dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginStart="25dp"
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:showIn="@layout/activity_voice_options">
+
+    <Button
+        android:id="@+id/leftButton"
+        android:elevation="30dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:text="Voice Over On"
+        android:drawableTop="@mipmap/voice_over_on_enabled"
+        style="@style/navButtonStyleHighlight"
+        android:background="@drawable/next_nav_button"
+        android:paddingTop="30dp"
+        android:drawablePadding="-30dp"
+        android:onClick="leftOptionClicked"
+        tools:layout_editor_absoluteX="496dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <View
+        android:layout_width="80px"
+        android:layout_height="match_parent">
+
+    </View>
+
+
+    <Button
+        android:id="@+id/rightButton"
+        android:elevation="30dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:text="Voice Over Off"
+        android:drawableTop="@mipmap/voice_over_on_enabled"
+        android:paddingTop="30dp"
+        android:drawablePadding="-30dp"
+        android:onClick="rightOptionClicked"
+        style="@style/navButtonStyleHighlight"
+        android:background="@drawable/next_nav_button"
+        tools:layout_editor_absoluteX="496dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+</LinearLayout>
+
+    

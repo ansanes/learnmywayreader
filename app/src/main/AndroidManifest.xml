@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.readium.sdk.android.launcher"
+    android:versionCode="31"
+    android:versionName="1.31"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- android:debuggable="true" -->
+    <application
+        android:name=".LearnMyWayApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="Select an EPUB folder"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContainerList"
+            android:label="@string/container_list_title"></activity>
+        <activity
+            android:name=".BookDataActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ContainerList"></activity>
+        <activity
+            android:name=".MetaDataActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".SpineItemsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".ListOfLandmarksActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".ListOfFiguresActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".ListOfIllustrationsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".ListOfTablesActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".PageListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".TableOfContentsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".BookmarksActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BookDataActivity"></activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="" />
+        <activity
+            android:name=".ChooseAPetHelperActivity"
+            android:label="" />
+        <activity
+            android:name=".ChooseAPetTextActivity"
+            android:label="" />
+        <activity
+            android:name=".ChoosePresetActivity"
+            android:label="" />
+        <activity
+            android:name=".VoiceOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".SignLanguageOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".ExtraTipsOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".BookOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".WellDoneOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".TutorialOptionsActivity"
+            android:label="" />
+        <activity
+            android:name=".ChooseHowToLearnActivity"
+            android:label="" />
+        <activity
+            android:name=".BookshelfActivity"
+            android:label="" />
+        <activity
+            android:name=".WebViewReaderActivity"
+            android:label="" />
+        <activity android:name=".ConfigurationOptionsActivity" android:theme="@android:style/Theme.Dialog"
+                  android:excludeFromRecents="true"></activity >
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonslinearLayout"
+    android:layout_width="0dp"
+    android:layout_height="150dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+
+    tools:showIn="@layout/activity_configuration_options">
+
+    <Button
+        android:id="@+id/leftButton"
+        android:elevation="30dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:text="Voice Over On"
+        android:drawableTop="@mipmap/voice_over_on_enabled"
+        style="@style/optionButtonStyle"
+        android:background="@drawable/next_nav_button"
+        android:paddingTop="30dp"
+        android:drawablePadding="-30dp"
+        android:onClick="optionButtonClicked" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="match_parent">
+    </View>
+
+
+    <Button
+        android:id="@+id/rightButton"
+        android:elevation="30dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:text="Voice Over Off"
+        android:drawableTop="@mipmap/voice_over_on_enabled"
+        android:paddingTop="30dp"
+        android:drawablePadding="-30dp"
+        android:onClick="rightOptionClicked"
+        style="@style/optionButtonStyle"
+        android:background="@drawable/next_nav_button"
+        />
+
+</LinearLayout>
+
+    
