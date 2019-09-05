@@ -17,7 +17,7 @@ This application includes a Bookshelf Activity. (org/readium/sdk/android/launche
 
 Feel free to modify this bookshelf activity or customize it to include your own epub publications.
 
-Epub files should be placed in the app/src/assets folder.
+Epub files should be placed in the app/src/assets folder. In there you can find the porta_aberta.epub file. The source files for this epub can be found in this repo: https://github.com/ansanes/portaabertaepub . Instructions on how the activities available in this book have been generated can be found there too.
 
 ## Adding support for sign language videos in your epubs
 
