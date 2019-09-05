@@ -1,4 +1,4 @@
-### Learn My Way Reader
+# Learn My Way Reader
 
 This is the repository for the Unicef Learn My Way Reader application. Learn My Way Reader is a part of the project Accessible Textbooks for All (https://www.accessibletextbooksforall.org/)
 
@@ -11,6 +11,16 @@ The source code for the epub are available here: https://github.com/ansanes/port
 
 You can use this project to create you own accesibility enabled solution.
 
+## Customizing the epubs available in the application.
+
+This application includes a Bookshelf Activity. (org/readium/sdk/android/launcher/BookshelfActivity.java) which lets the user pick the epub he wants to read. In this sample app the Bookshelf Activity shows the Porta Aberta epub series but only the first volume is available.
+
+Feel free to modify this bookshelf activity or customize it to include your own epub publications.
+
+Epub files should be placed in the app/src/assets folder.
+
+## Adding support for sign language videos in your epubs
+
 Readium has text to speech capabitilities. In order to providad TTS capabilities in you epubs you need to use the smil extension.
 Adding SMIL suport to you epub consists of creating the appropiate .smil files where a mapping between the html text elements and the corresponding speech sound files is defined.
 
@@ -20,9 +30,9 @@ With learn my way reader you can add sign language video features by using the s
 
 Video files have to be placed in the app\src\main\res\raw folder and video smil files in app\src\main\assets\signlanguagesmilfiles
 
-In this project you can find the files used by the porta abarta epub.
+In this project you can find the files used by the porta aberta epub.
 
-Video smil files html id references hava to match the tts smil files id references.
+Video smil files html id references have to match the tts smil files id references.
 
 ie. for the tts smil file page1.smil
 
@@ -38,7 +48,7 @@ ie. for the tts smil file page1.smil
 </smil>
 ```
 
-the corresponding video smil fiel would be page1_sign.smil:
+the corresponding video smil file would be page1_sign.smil:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">
