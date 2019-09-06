@@ -11,6 +11,13 @@ The source code for the epub are available here: https://github.com/ansanes/port
 
 You can use this project to create you own accesibility enabled solution.
 
+## Setting up your environmenrt.
+
+Clone the repository into your filesystem. Android studio should recognize it and automatically build the executables.
+To test the application it is recommended to use a real device. The application is designed to be executed in Android tablets both in portrait and landscape mode.
+
+Running this application in a emulator is not optimal as you'll need an ARM based emulator and those doesn't take advantage of the HAXM intel acceleration feautres. This is because Readium SDK is only compatible with ARM architechture at this moment.
+
 ## Customizing the epubs available in the application.
 
 This application includes a Bookshelf Activity. (org/readium/sdk/android/launcher/BookshelfActivity.java) which lets the user pick the epub he wants to read. In this sample app the Bookshelf Activity shows the Porta Aberta epub series but only the first volume is available.
@@ -60,6 +67,3 @@ the corresponding video smil file would be page1_sign.smil:
     </body>
 </smil>
 ```
-
-
-
