@@ -67,3 +67,7 @@ the corresponding video smil file would be page1_sign.smil:
     </body>
 </smil>
 ```
+
+To get sign language video support we had to modify the Readium SDK to add synchronization between text overlays and videos. This is because sign languages usually take longer to play than its corresponding audio files so the engine must wait till the sign language video finishes to start highlighting and reading the next html text element.
+
+Voice overlay and sign language videos can be enabled/disabled manually using the onscreen controls.
